@@ -70,6 +70,26 @@
       color: var(--faint);
     }
     a { color: inherit; }
+    .home-link {
+      position: fixed;
+      top: max(12px, env(safe-area-inset-top));
+      right: max(12px, env(safe-area-inset-right));
+      z-index: 10;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface-strong);
+      color: var(--gold);
+      text-decoration: none;
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .home-link:hover, .home-link:focus-visible {
+      border-color: var(--gold);
+      color: var(--text);
+      outline: none;
+    }
     .page {
       position: relative;
       width: min(100%, 760px);
@@ -243,6 +263,7 @@
   </style>
 </head>
 <body>
+  <a class="home-link" href="https://jesuslovestyler.com/">⌂ Home</a>
   <main class="page">
     <header class="opening">
       <div class="flame" aria-hidden="true"></div>
@@ -287,5 +308,6 @@
     <div class="closing"><div class="closing-rule" aria-hidden="true"></div><p>The One who keeps you will not sleep.</p></div>
     <footer>Scripture quotations are from the World English Bible, a public-domain translation.</footer>
   </main>
+  <script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
